@@ -37,8 +37,9 @@ export default function Daftar() {
       setLoading(true);
       setError('');
 
+      console.log(process.env.NEXT_PUBLIC_API_URL);
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/auth/register`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`,
         {
           method: "POST",
           headers: {

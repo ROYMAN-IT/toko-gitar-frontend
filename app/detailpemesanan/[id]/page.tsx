@@ -31,7 +31,7 @@ export default function DetailPemesanan() {
         return;
       }
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/orders/${id}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/orders/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
